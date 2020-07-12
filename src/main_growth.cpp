@@ -18,6 +18,7 @@ int main () {
 
   std::ofstream output("data.csv");
 
+  output << "Length,Cumulative Growth" << std::endl;
   for (int i = 0; i <= 1'000'000'000; ++i) {
     auto [size, value] = growth.next();
     output << size << "," << value << std::endl;
