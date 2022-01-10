@@ -1,15 +1,14 @@
-#include <map>
-#include <utility>
 #include <fstream>
 #include <iostream>
+#include <map>
+#include <utility>
 
-#include "geodesic-growth.hpp"
-#include "group-impl/virt-heisenberg.hpp"
+#include <vheis/geodesic-growth.hpp>
+#include <vheis/group-impl/virt-heisenberg.hpp>
 
 using namespace group_visualisation;
 
-int main () {
-
+int main() {
   using group = group_impl::virt_heisenberg;
 
   auto g_set = group::default_generating_set();
@@ -19,9 +18,9 @@ int main () {
   std::ofstream output("data.csv");
 
   output << "Length,Cumulative Growth" << std::endl;
-  for (int i = 0; i <= 1'000'000'000; ++i) {
+  for (int i = 0; i <= 1'000; ++i) {
     auto [size, value] = growth.next();
-    output << size << "," << value << std::endl;
+    output << static_cast<int>(size) << ","
+           << static_cast<unsigned long long>(value) << std::endl;
   }
-
 }
