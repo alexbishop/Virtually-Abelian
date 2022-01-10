@@ -6,7 +6,7 @@
 
 #include "SafeInt.hpp"
 
-namespace group_visualisation {
+namespace vheis {
 
 template <class Group>
 class geodesic_growth {
@@ -28,11 +28,11 @@ class geodesic_growth {
   std::map<Group, SafeInt<unsigned long long>> sphere_2;
 };
 
-};  // namespace group_visualisation
+};  // namespace vheis
 
 // Implementation
 
-namespace group_visualisation {
+namespace vheis {
 
 template <class Group>
 template <class Vector>
@@ -77,4 +77,4 @@ geodesic_growth<Group>::next() {
   return std::make_pair(current_size, running_total);
 }
 
-}  // namespace group_visualisation
+}  // namespace vheis

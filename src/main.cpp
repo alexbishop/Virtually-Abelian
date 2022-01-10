@@ -6,7 +6,7 @@
 #include <vheis/geodesic-growth.hpp>
 #include <vheis/group-impl/virt-heisenberg.hpp>
 
-using namespace group_visualisation;
+using namespace vheis;
 
 int main() {
   using group = group_impl::virt_heisenberg;

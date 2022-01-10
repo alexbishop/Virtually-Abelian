@@ -4,7 +4,7 @@
 
 #include "SafeInt.hpp"
 
-namespace group_visualisation {
+namespace vheis {
 namespace group_impl {
 
 class heisenberg {
@@ -37,4 +37,4 @@ class heisenberg {
 };
 
 };  // namespace group_impl
-};  // namespace group_visualisation
+};  // namespace vheis

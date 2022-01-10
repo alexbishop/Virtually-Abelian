@@ -3,7 +3,7 @@
 
 #include <vheis/group-impl/virt-heisenberg.hpp>
 
-namespace group_visualisation {
+namespace vheis {
 namespace group_impl {
 
 virt_heisenberg::virt_heisenberg() : virt_heisenberg(0, 0, 0, false) {}
@@ -111,4 +111,4 @@ bool virt_heisenberg::operator!=(const virt_heisenberg& rhs) const {
 }
 
 };  // namespace group_impl
-};  // namespace group_visualisation
+};  // namespace vheis

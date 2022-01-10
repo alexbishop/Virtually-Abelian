@@ -2,7 +2,7 @@
 
 #include <vheis/group-impl/heisenberg.hpp>
 
-namespace group_visualisation {
+namespace vheis {
 namespace group_impl {
 
 heisenberg::heisenberg() : heisenberg(0, 0, 0) {}
@@ -56,4 +56,4 @@ SafeInt<int> heisenberg::z() const {
 }
 
 };  // namespace group_impl
-};  // namespace group_visualisation
+};  // namespace vheis
